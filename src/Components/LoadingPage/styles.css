@@ -1,0 +1,38 @@
+.loading-screen {
+    display: flex;
+    flex-flow: row nowrap;
+
+    justify-content: center;
+    align-items: center;
+
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 25px 10px #000000;
+    
+    width: 100vw;
+    height: 70vh;
+}
+    .loading-text {
+        color: #22272B;
+        margin: 2%;
+    }
+
+.loading-screen .loading-spin {
+    width: 1em;
+    height: 1em;
+
+    border: 0.5em solid #c8c8c8;
+    border-left: 0.5em solid royalblue;
+    border-radius: 50%;
+
+    animation: rotating 1s infinite;
+}
+
+@keyframes rotating { 
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
