@@ -1,0 +1,107 @@
+.Dragons-page {
+    background: linear-gradient(90deg, rgba(0,0,0,0.9),rgba(0,0,0,0.9)), url("https://live.staticflickr.com/65535/51854587577_a29bc1cace_3k.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.Dragons-page .dragons {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+    width: 99.5%;
+    font-size: 1em;
+}
+
+.Dragons-page .dragons .dragon {
+    display: flex;
+    flex-flow: column nowrap;
+
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 5%;
+    width: 90%;
+    
+    text-align: center;
+    border: 0.2em solid white;
+
+    background-color: rgba(0,0,0,0.9);
+
+    transition: ease-in 0.4s;
+}
+
+.Dragons-page .dragons .dragon:hover {
+    border: 0.2em solid #005288;
+
+    background-color: rgba(0,0,0,0.9);
+}
+
+.Dragons-page .dragon h1 {
+    color: #005288;
+}
+
+
+
+
+.Dragons-page .dragons .dragon-payload {
+    margin: 5%;
+    width: 80%;
+    border-color: white;
+
+    transition: ease-in 0.4s;
+}
+
+.Dragons-page .dragons .dragon-payload:hover {
+    border-color: #005288;
+}
+
+.Dragons-page .dragons .dragon-imgs img {
+    margin: 2%;
+    width: 90%;
+    height: auto;
+
+    border: 0.2em solid white;
+
+    transition: ease 0.4s;
+}
+
+.Dragons-page .dragons .dragon-imgs img:hover {
+    border-color: #005288;
+}
+
+.Dragons-page .dragons .dragon-wiki {
+    text-decoration: none;
+    color: #005288;
+
+    transition: ease 0.4s;
+}
+
+.Dragons-page .dragons .dragon-wiki:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+@media screen and (min-width: 992px) {
+    
+    .Dragons-page .dragons {
+        flex-flow: row nowrap;
+    }
+    
+    .Dragons-page .dragons .dragon {
+        margin: 2%;
+        width: 70%;
+    }
+
+    .Dragons-page .dragons .dragon-imgs {
+        flex-flow: row wrap;
+    }
+
+    .Dragons-page .dragons .dragon-imgs img {
+        width: 44%;
+        height: auto;
+    }
+}

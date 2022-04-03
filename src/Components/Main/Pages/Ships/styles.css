@@ -1,0 +1,81 @@
+.Ships-page {
+    display: flex;
+    flex-flow: column nowrap;
+
+    align-items: center;
+    justify-content: center;
+
+    background: linear-gradient(90deg, rgba(0,0,0,0.9),rgba(0,0,0,0.9)), url("https://live.staticflickr.com/65535/51677186098_8273704670_3k.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.Ships-page .Ships {
+    display: flex;
+    flex-flow: column nowrap;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 85%;
+    padding: 5%;
+
+    background-color: rgba(0,0,0,0.7);
+    border: 0.2em solid white;
+    border-radius: 8px;
+
+    transition: ease-in 0.4s;
+}
+
+.Ships-page .Ships:hover {
+    border: 0.2em solid #005288;
+    
+}
+
+.Ships-page .Ships .ship {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    
+    text-align: center;
+
+    width: 90%;
+
+    border: 0.2em solid white;
+    border-radius: 8px;
+
+    margin: 2%;
+
+    transition: ease-in 0.4s;
+}
+
+.Ships-page .Ships .ship:hover {
+    border: 0.2em solid #005288;
+
+}
+
+.Ships-page .Ships .ship a {
+    text-decoration: none;
+    color: white;
+
+    transition: ease-in 0.4s;
+}
+
+.Ships-page .Ships .ship a:hover {
+    text-decoration: underline;
+    color: #005288;
+}
+
+.Ships-page .Ships .ship h1,h2 {
+    margin: 0;
+
+    color: #005288;
+}
+
+
+.Ships-page .Ships .ship .ship-img img {
+    width: 100%;
+}

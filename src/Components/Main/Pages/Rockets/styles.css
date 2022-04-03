@@ -1,0 +1,94 @@
+.Rockets-page {
+    background: linear-gradient(90deg, rgba(0,0,0,0.9),rgba(0,0,0,0.9)), url("https://i.imgur.com/azYafd8.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    padding-top: 5%;
+}
+
+.rockets {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.Rockets-page .rocket {
+    display: flex;
+    flex-flow: column nowrap;
+
+    justify-content: center;
+    align-items: center;
+    
+    width: 100%;
+
+    margin: 2%;
+
+    background-color: rgba(0,0,0,0.6);
+    border: 0.2em solid white;
+    border-radius: 8px;
+
+    transition: ease-in 0.4s;
+}
+
+.Rockets-page .rocket:hover {
+    background-color: rgba(0,0,0,0.9);
+    border: 0.2em solid #005288;
+
+}
+
+.Rockets-page .rocket h1,h2 {
+    margin: 0;
+}
+
+.Rockets-page .rocket .rocket-info {
+    display: flex;
+    text-align: center;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.Rockets-page .rocket .rocket-imgs {
+    padding: 3%;
+}
+
+.Rockets-page .rocket a {
+    color: lightblue;
+    text-decoration: none;
+
+    transition: ease-in 0.4s;
+}
+
+.Rockets-page .rocket a:hover {
+    color: #005288;
+    text-decoration: underline;
+}
+
+
+.Rockets-page .rocket .rocket-imgs img {
+    width: 100%;
+    border: 0.2em solid white;
+    border-radius: 8px;
+    
+    transition: ease-in 0.4s;
+}
+
+.Rockets-page .rocket .rocket-imgs img:hover {
+    border: 0.2em solid #005288;
+}
+
+.Rockets-page .rocket .rocket-description {
+    margin: 5%;
+}
+
+@media screen and (min-width:992px) {
+    .Rockets-page .rocket {
+        width: 90%;
+        height: 30%;
+    }
+
+    .Rockets-page .rockets {
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+}

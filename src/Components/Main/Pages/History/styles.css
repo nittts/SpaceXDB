@@ -1,0 +1,46 @@
+.History-page {
+background: linear-gradient(90deg, rgba(0,0,0,0.9),rgba(0,0,0,0.9)), url("https://live.staticflickr.com/65535/51854587577_a29bc1cace_3k.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+}   
+
+.History-page .stories {
+    display: flex;
+    flex-flow: column nowrap;
+
+    align-items: center;
+    justify-content: center;
+
+    background-color: transparent;
+}
+
+.History-page .stories .memory-story {
+    width: 90%;
+    border: 0.2em solid white;
+    border-radius: 8px;
+
+    text-align: center;
+
+    margin: 2%;
+
+    transition: ease-in 0.4s;
+}
+
+.History-page .stories .memory-story:hover {
+    border-color: #005288;
+    background-color: rgba(0,0,0,0.9);
+}
+
+.History-page .stories .memory-story a {
+    color: lightblue;
+    text-decoration: none;
+    
+    transition: ease 0.4s;
+}
+
+.History-page .stories .memory-story a:hover {
+    color: #005288;
+    text-decoration: underline;
+}

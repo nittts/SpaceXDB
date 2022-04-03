@@ -1,0 +1,66 @@
+.cores-page {    
+    background: linear-gradient(90deg, rgba(0,0,0,0.9),rgba(0,0,0,0.9)), url("https://live.staticflickr.com/65535/51924631989_a4e3dddb62_3k.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.cores-page h1 {
+    text-align: center;
+    color: #005288;
+    margin: 0;
+    padding-top: 5%;
+}
+
+.cores-page .cores {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;  
+}
+
+.cores-page .core-cell {
+    margin-top: 5%;
+    padding: 2%;
+    width: 90%;
+
+    text-align: center;
+    background-color: rgba(0,0,0,0.7);
+    border: 0.2em solid rgba(0,0,0,0.7);
+    border-radius: 8px;
+
+    transition: ease-in-out 0.2s;
+}
+
+.cores-page .core-cell:hover {
+    background-color: rgba(0,0,0,0.8);
+    border: 0.2em solid #005288;
+}
+
+.cores-page .core-cell fieldset {
+    transition: ease-in-out 0.2s;
+
+}
+
+.cores-page .core-cell fieldset:hover {
+    border-color: #005288;
+}
+
+@media screen and (min-width: 992px) {
+
+    .cores-page .cores {
+        flex-flow: row wrap;
+    }
+
+    .cores-page .core-cell {
+        font-size: 0.7em;
+        width: 23%;
+        margin: 2%;
+    }
+
+    .cores-page .core-cell fieldset {
+        font-size: 1.2em;
+        width: 90%;
+    }
+}

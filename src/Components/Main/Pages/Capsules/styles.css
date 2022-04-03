@@ -5,8 +5,11 @@
     align-items: center;
     justify-content: center;
 
-    margin-top: 5%;
-    background-color: #22272B;
+    background : linear-gradient(90deg,rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url("https://live.staticflickr.com/8617/16789019815_632f3c8222_3k.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 .Capsules-title {
@@ -26,10 +29,10 @@
     width: 70%;
     height: 20%;
 
-    background-color: #dfdfdf;
-    color: #181C1F;
+    background-color: rgba(0,0,0,0.8);
+    color: white;
 
-    border: 0.1em solid #dfdfdf;
+    border: 0.2em solid white;
     border-radius: 8px;
     box-shadow: 10px 10px 10px black;
 }
@@ -47,11 +50,11 @@
 }
 
 .capsule:hover {
-    border: 0.1em solid #005288;
+    border: 0.2em solid #005288;
 }
 
 .capsule fieldset {
-    border: 2px solid #A7A9AC;
+    border: 2px solid white;
     border-radius: 8px;
      
     font-size: 0.8em;

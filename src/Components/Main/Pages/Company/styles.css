@@ -1,0 +1,197 @@
+.company-page {
+    display: flex;
+    flex-flow: column nowrap;
+
+    width: 96%;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    background: linear-gradient(90deg,rgba(0,0,0,0.9), rgba(0,0,0,0.9)), url("https://live.staticflickr.com/65535/51924607369_ff3f0829d7_3k.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    border-radius: 8px;
+
+    box-shadow: 0px 0px 10px 10px black;
+}
+
+.company-page .company-headquarters {
+    display: flex;
+    flex-flow: column nowrap;
+
+    background-color: rgba(0,0,0,0.8);
+
+    box-shadow: 0px 1px 10px 2px black;
+}
+    .company-page .company-headquarters h1 { 
+        color: #005288;
+        
+        margin: 0;
+        margin-top: 5%;
+        text-align: center;
+    }
+
+    .company-page .company-headquarters ul {
+        display: flex;
+        list-style-type: none;
+
+        justify-content: center;
+    }
+    .company-page .company-headquarters li {
+        padding: 1%;
+        margin: 0;
+        align-self: center;
+    }
+
+
+.company-page .company-link {
+    display: flex;
+    flex-flow: row wrap;
+
+    align-items: center;
+    justify-content: center;
+
+    background-color: rgba(0,0,0,0.8);
+}
+
+    .company-page .company-link a {
+        width: 50%;
+        text-align: center;
+    }
+
+    .company-page .company-link button {
+        border: 0.1em solid white;
+        box-shadow: 0 0 0 0 #005288 inset;
+
+        margin: 2%;
+        padding: 10%;
+        
+        font-size: 1.5em;
+        
+        color: white;
+        background-color: rgba(0,0,0,0.7);
+        
+        width: 90%;
+
+        transition: ease-out 0.4s;
+    }
+
+    .company-page .company-link button:hover {
+        border: 0.1em solid rgb(0, 70, 120);
+
+        box-shadow: 0 10em 0 0 #005288 inset;
+    }
+
+.company-page .company-about .company-info {
+    display: flex;
+    flex-flow: column nowrap;
+    
+    width: 100%;
+
+    text-align: center;
+    
+    background-color: rgba(0,0,0,0.7);
+}
+    .company-page .company-about .company-info h1 {
+        color: #005288;
+    }
+
+    .company-page .company-about .company-info p {
+        text-shadow: 0px 0px 10px white;
+    }
+
+    .company-page .company-about .company-info .company-info-statistics {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
+
+.company-page .company-about .company-leads {
+    display: flex;
+    flex-flow: column nowrap;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+
+    background-color: rgba(0,0,0,0.7);
+}
+    .company-page .company-about .company-leads div {
+        display: flex;
+        flex-flow: column nowrap;
+
+        justify-content: center;
+        align-items: center;
+
+        text-align: center;
+
+        width: 80%;
+
+        background-color: transparent;
+
+        padding: 5%;
+        border: 0.2em solid white;
+
+        transition: ease-out 0.4s;
+        
+        margin: 2%;
+    }
+
+    .company-page .company-about .company-leads div:hover {
+        border: 0.2em solid rgb(0, 70, 120);
+        background-color: #005288;
+    }
+        .company-page .company-about .company-leads div img {
+            width: 100%;
+            height: 20%;
+
+            border: 0.2em solid white;
+        }
+
+
+    .company-page .company-about fieldset {
+        padding: 1%;
+        text-align: center;
+
+        justify-self: center;
+        align-self: center;
+        background-color: rgba(0,0,0,0.7);
+    }
+
+.company-summary {
+    margin: 5%;
+    font-size: 1em;
+    width: 90%;
+
+    text-align: center;
+    text-shadow: 0px 0px 2px white;
+
+    background-color: rgba(0,0,0,0.7)
+}
+
+
+@media screen and (min-width:992px) {
+    .company-page .company-about .company-leads {
+        flex-flow: row nowrap;
+
+        align-content: center;
+        justify-content: space-evenly;
+
+        margin-bottom: 5%;
+    }
+
+    .company-page .company-about .company-leads div {
+        width: 30%;
+        height: 100%;
+        padding: 5%;
+        margin: 1%;
+    }
+
+    .company-page .company-about .company-leads div img {
+        width: 80%;
+    }
+}

@@ -15,8 +15,10 @@ function Navigation() {
             <Hamburger
               toggled={isOpen}
               toggle={() => setOpen((prev) => !prev)}
-              direction="right"
+              direction="left"
               color="#005288"
+              size={48}
+              label="Show Menu"
             />
             <ul className="nav-bar-items">
               <li>
@@ -38,9 +40,6 @@ function Navigation() {
                 <NavLink to="/Landpads" className={"menu-link"}>Landpads</NavLink>
               </li>
               <li>
-                <NavLink to="/Launches" className={"menu-link"}>Launches</NavLink>
-              </li>
-              <li>
                 <NavLink to="/Launchpads" className={"menu-link"}>Launchpads</NavLink>
               </li>
               <li>
@@ -48,9 +47,6 @@ function Navigation() {
               </li>
               <li>
                 <NavLink to="/Ships" className={"menu-link"}>Ships</NavLink>
-              </li>
-              <li>
-                <NavLink to="/Starlink" className={"menu-link"}>Starlink</NavLink>
               </li>
               <li>
                 <NavLink to="/History" className={"menu-link"}>History</NavLink>

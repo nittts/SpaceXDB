@@ -1,0 +1,100 @@
+.Launchpads-page {
+    background: linear-gradient(90deg, rgba(0,0,0,0.9),rgba(0,0,0,0.9)), url("https://live.staticflickr.com/65535/51677186098_8273704670_3k.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+
+.Launchpads-page .Launchpads {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.Launchpads-page .Launchpads .launchpad {
+    width: 90%;
+
+    border: 0.2em solid white;
+    border-radius: 8px;
+    
+    background-color: rgba(0,0,0,0.7);
+
+    text-align: center;
+    margin: 2%;
+
+    transition: ease-in 0.4s;
+}
+
+.Launchpads-page .Launchpads .Launchpads:hover {
+    background-color: rgba(0,0,0,0.9);
+
+    border: 0.2em solid #005288;
+}
+
+.Launchpads-page .Launchpads .launchpad .launchpad-info {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+
+    margin: 0;
+}
+
+.Launchpads-page .Launchpads .launchpad .launchpad-info p {
+    padding: 1%;
+}
+
+.Launchpads-page .Launchpads .launchpad .launchpad-coordinates {
+    text-align: center;
+}
+
+.Launchpads-page .Launchpads .launchpad .launchpad-coordinates a {
+    text-decoration: none;
+    color: lightblue;
+
+    transition: ease-in 0.4s;
+}
+
+.Launchpads-page .Launchpads .launchpad .launchpad-coordinates a:hover {
+    color: #005288;
+    text-decoration: underline;
+}
+
+.Launchpads-page .Launchpads .launchpad .launchpad-landings {
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+}
+
+.Launchpads-page .Launchpads .launchpad .launchpad-landings .launchpad-landingsAttempts, .launchpad-landingsSuccess {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    margin: 2%;
+    width: 80%;
+    text-shadow: 10px 10px 10px 10px white;
+}
+
+.Launchpads-page .Launchpads .launchpad a {
+    color: white;
+    text-decoration: none;
+
+    font-size: 1.5em;
+
+    transition: ease-in 0.4s;
+}
+
+.Launchpads-page .Launchpads .launchpad a:hover{
+    color: #005288;
+    text-decoration: underline;
+}
+
+
+.Launchpads-page .Launchpads .launchpad .launchpad-img img {
+    width: 100%;
+    box-shadow: 0px 10px 5px 2px #005288;
+}
