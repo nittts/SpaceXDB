@@ -10,11 +10,13 @@ import Landpads from './Pages/Landpads'
 import Launchpads from './Pages/Launchpads'
 import Rockets from './Pages/Rockets'
 import Ships from './Pages/Ships'
+import Welcome from "./Pages/Welcome"
 
 function Main() {
 
     return (
         <Routes>
+        <Route activeClassName="current" exact path='/' element={<Welcome/>}></Route>
         <Route activeClassName="current" exact path='/Capsules' element={<Capsules/>}></Route>
         <Route activeClassName="current" exact path='/Company' element={<Company/>}></Route>
         <Route activeClassName="current" exact path='/Cores' element={<Cores/>}></Route>

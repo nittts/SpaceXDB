@@ -22,6 +22,9 @@ function Navigation() {
             />
             <ul className="nav-bar-items">
               <li>
+                <NavLink to="/" className={"menu-link"}>Welcome</NavLink>
+              </li>
+              <li>
                 <NavLink to="/Capsules" className={"menu-link"}>Capsules</NavLink>
               </li>
               <li>
