@@ -80,7 +80,7 @@
 
     .company-page .company-link button:hover {
         border: 0.1em solid rgb(0, 70, 120);
-
+        cursor: pointer;
         box-shadow: 0 10em 0 0 #005288 inset;
     }
 
